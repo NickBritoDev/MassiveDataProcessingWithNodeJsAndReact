@@ -1,6 +1,7 @@
 
-import { VStack, Text } from '@chakra-ui/react'
+import { VStack } from '@chakra-ui/react'
 import ToggleMode from './components/ToggleMode';
+import Home from './home/Home';
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
     <VStack p={6}>
       <ToggleMode />
-      <Text>Hello World</Text>
+      <Home />
     </VStack>
   );
 }
