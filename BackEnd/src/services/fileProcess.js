@@ -31,7 +31,7 @@ export async function processFile(file) {
         const data = JSON.parse(Buffer.from(chunk));
         const mappedData = mapData(data);
 
-        controller.enqueue(JSON.stringify(mappedData).concat('\n' + '\n' + '\n'));
+        controller.enqueue(JSON.stringify(mappedData).concat('\n'));
       }
     }));
 }
