@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChakraProvider, CSSReset, Box, Button, Grid, GridItem, Text, Flex, Image, Divider, Icon } from "@chakra-ui/react";
 import { FcLike, FcRating } from 'react-icons/fc';
-import SaibaMais from './components/SaibaMais';
+//import SaibaMais from './components/SaibaMais';
 
 const API_URL = 'http://localhost:3000';
 let abortController = new AbortController();
@@ -9,7 +9,7 @@ let abortController = new AbortController();
 export default function Home() {
   // Estado para armazenar os dados obtidos da API
   const [data, setData] = useState([]);
-  const [aberto, setAberto] = useState(false)
+  //const [aberto, setAberto] = useState(false)
 
   // Função assíncrona para consumir a API
   const consumeAPI = async () => {
@@ -87,7 +87,7 @@ export default function Home() {
     };
   }, []); // A array de dependências vazia significa que este efeito é executado uma vez após a renderização inicial
 
-  const handleSaibaMais = ({
+ /* const handleSaibaMais = ({
     title,
     description,
     year,
@@ -153,7 +153,7 @@ export default function Home() {
         aberto={aberto}
       />
     );
-  };
+  };*/
 
   // Função para adicionar elementos JSX ao estado 'data'
   const appendToHTML = () => {
